@@ -89,6 +89,7 @@ export const offers = [
         image: buritto,
         color: "#EB920C",
     },
+    
 ];
 
 export const sides = [
