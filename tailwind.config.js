@@ -11,7 +11,12 @@ module.exports = {
         },
         yellow: {
           200: '#EB920C'
-        }
+        },
+        white: {
+          DEFAULT: "#ffffff",
+          100: "#fafafa",
+          200: "#FE8C00",
+        },
       },
       fontFamily: {
         quicksand: ["Quicksand-Regular", "sans-serif"],
