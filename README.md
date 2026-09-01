@@ -54,47 +54,44 @@ O projeto utiliza uma stack moderna para desenvolvimento profissional com React 
 
 ---
 
-## 🛠️ Como Rodar o Projeto
+## 📦 Instalação
 
-### Pré-requisitos
-
-Antes de começar, certifique-se de ter:
-
-* [Node.js](https://nodejs.org/) instalado
-* Aplicativo **Expo Go** instalado no seu celular (Android ou iOS)
-
-### Passo a Passo
-
-#### 1. Clone o repositório
+Clone o repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/DevKhal-EL/Fast-Food-App.git
-```
-
-#### 2. Entre na pasta do projeto
-
-```bash
 cd fast-food-delivery
-```
-
-#### 3. Instale as dependências
-
-```bash
 npm install
 ```
 
-#### 4. Inicie o Metro Bundler
+---
+
+## 🔐 Configuração do Ambiente (`.env`)
+
+Este projeto utiliza **variáveis de ambiente** para configurar a conexão com o backend.
+
+Crie um arquivo `.env` na raiz do projeto. Você pode utilizar o arquivo `.env.example` como referência.
+
+Adicione as seguintes variáveis:
+
+```env
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=seu_project_id
+EXPO_PUBLIC_APPWRITE_ENDPOINT=seu_endpoint
+```
+
+> **Importante:** não compartilhe ou faça commit do arquivo `.env` caso ele contenha credenciais ou informações sensíveis.
+
+---
+
+## ▶️ Execução
+
+Inicie o servidor de desenvolvimento (**Metro Bundler**):
 
 ```bash
 npx expo start
 ```
 
-#### 5. Abra o aplicativo no celular
-
-Escaneie o **QR Code** exibido no terminal usando:
-
-* A câmera do celular no **iOS**
-* O aplicativo **Expo Go** no **Android**
+Depois, abra o **Expo Go** no seu celular e escaneie o **QR Code** exibido no terminal.
 
 ---
 
