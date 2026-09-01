@@ -1,16 +1,21 @@
-import {FlatList, Pressable, Text, View, Image} from "react-native";
+import {FlatList, Pressable, Text, View, Image, TouchableOpacity, Animated} from "react-native";
 import {images, offers} from "@/constants"
 import {SafeAreaView} from "react-native-safe-area-context";
-import './global.css'
 import {Fragment} from "react";
 import cn from "clsx";
-import {colors} from "nativewind/src/tailwind/color";
+import ScrollView = Animated.ScrollView;
+import CartButton from "@/Components/CartButton";
 
 
 
 export default function Index() {
+    console.log("Ofertas:", offers);
     return (
         <SafeAreaView className="flex-1 bg-white">
+
+
+
+
             <FlatList
                 data = {offers}
                 renderItem = {({item, index}) => {
@@ -20,7 +25,7 @@ export default function Index() {
                             className =
                                 {cn("offer-card", isEven ? 'flex-row-reverse' : 'flex-row')}
                                 style = {{ backgroundColor : item.color }}
-                                android_ripple = {{ color : "#fffff22" }}
+                                android_ripple = {{ color : "#ffffff22" }}
                         >
                             {({ pressed }) => (
                                 <Fragment>
@@ -32,19 +37,31 @@ export default function Index() {
                                             {item.title}
                                         </Text>
                                         <Image source = {images.arrowRight}
-                                               className = "size=30"
+                                               className = "size-10"
                                                resizeMode = "contain"
-                                               tintColor = "#fffffff"
+                                               tintColor = "#ffffff"
                                         />
                                     </View>
                                 </Fragment>
                              )}
-
                         </Pressable>
                     )
                 }
             }
-                contentContainerClassName = "pt-28 px-5"
+                contentContainerClassName = "pb-28 px-5"
+                ListHeaderComponent = {() => (
+                    <View className={"flex-between flex-row my-5 px-5"}>
+                        <View className="flex-start">
+                            <Text className = "small-bold text-primary">DELIVER TO</Text>
+                            <TouchableOpacity className = "flex-center flex-row gap-x-1 mt-0.5">
+                                <Text className = "paragraph-bold ">Brazil</Text>
+                                <Image source={images.arrowDown} className="size-5" resizeMode="contain"></Image>
+                            </TouchableOpacity>
+                        </View>
+                        <CartButton/>
+                    </View>
+                )}
+
             />
         </SafeAreaView>
     );

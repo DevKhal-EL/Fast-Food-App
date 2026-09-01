@@ -14,10 +14,17 @@ export default function RootLayout() {
     "Quicksand-SemiBold": require('../assets/fonts/Quicksand-SemiBold.ttf'),
   });
 
+  console.log("Fontes carregadas:", fontsLoaded);
+  console.log("Erro de fonte:", error);
+
   useEffect(() => {
     if(error) throw error;
     if(fontsLoaded) SplashScreen.hideAsync();
   }, [fontsLoaded, error]);
+
+  if (!fontsLoaded && !error) {
+    return null;
+  }
 
   return <Stack screenOptions = {{headerShown: false}} />;
 }
