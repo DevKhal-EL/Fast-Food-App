@@ -32,15 +32,25 @@ O projeto utiliza uma stack moderna para desenvolvimento profissional com React 
 
 ## ✨ Funcionalidades
 
+### ✨ Funcionalidades Implementadas
+
+* [x] **Arquitetura de Pastas Escalável:** Organização profissional utilizando grupos de rotas (*folder-based routing*) com o Expo Router.
+* [x] **Sistema de Navegação Nativa:** Implementação de navegação por abas (*Tabs*) flutuante e pilhas (*Stack*) para uma experiência fluida.
+* [x] **Interface de Autenticação (UI):** Criação das telas de Login e Cadastro com layouts compartilhados e componentes reutilizáveis.
+* [x] **Design com NativeWind:** Estilização moderna e responsiva utilizando Tailwind CSS diretamente no React Native.
+* [x] **Configuração de Fontes e Assets:** Integração de fontes personalizadas (Quicksand) e gerenciamento de ícones do projeto.
+
+---
+
+## 🚧 Próximos Passos
+
 **Em desenvolvimento**
 
-* [x] Estrutura de pastas escalável e navegação por abas (Tabs)
-* [x] Autenticação completa (E-mail e Senha) com Appwrite
-* [x] Design responsivo com NativeWind
-* [x] Gerenciamento de estado global para o carrinho com Zustand
-* [x] Busca de produtos com filtros por categoria
-* [ ] Integração de pagamentos reais
-* [ ] Perfil de usuário detalhado
+* [ ] **Integração com Appwrite:** Conexão com o backend para autenticação real de usuários e banco de dados NoSQL.
+* [ ] **Gerenciamento de Estado Global (Zustand):** Implementação da lógica para manter os dados sincronizados em todo o app, como o contador do carrinho.
+* [ ] **Busca e Filtros Dinâmicos:** Sistema de pesquisa de produtos com filtragem por categorias vindas do banco de dados.
+* [ ] **Lógica Completa do Carrinho:** Funcionalidade para adicionar, remover e gerenciar quantidades de itens.
+* [ ] **Monitoramento com Sentry:** Rastreamento de erros e crashes em tempo real para produção.
 
 ---
 
