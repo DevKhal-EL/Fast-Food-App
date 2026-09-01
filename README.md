@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+🍔 Fast Food Delivery App - React Native Study
+Este projeto é uma aplicação mobile de entrega de comida desenvolvida com o objetivo de colocar em prática conceitos avançados de React Native e arquitetura de software escalável. O desenvolvimento foi guiado pelo tutorial profissional da JavaScript Mastery.
+🎯 Objetivos do Projeto
+Este repositório foi criado para:
+Domínio de Base (Etec): Aprender os fundamentos de criação de páginas e navegação em React Native para garantir um desempenho sólido e sem dificuldades técnicas durante os estudos na Etec.
+Conhecimento Prévio: Obter uma base prática robusta antes de me aprofundar em cursos avançados de desenvolvimento mobile.
+Experiência com Projetos Reais: Entender como aplicativos profissionais lidam com estados globais, autenticação, bancos de dados complexos e monitoramento de erros em produção
+.
+Prática Mobile: Exercitar a lógica de programação voltada para dispositivos móveis e estilização moderna.
+🚀 Tecnologias Utilizadas
+O app utiliza a "Stack de Ouro" para desenvolvimento React Native profissional
+:
+Expo: Ecossistema de ferramentas que facilita o desenvolvimento e deploy nativo
+.
+NativeWind: Implementação do Tailwind CSS para React Native, permitindo estilização rápida e adaptável (Light/Dark mode)
+.
+Zustand: Gerenciamento de estado global leve e performático, sem o boilerplate do Redux
+.
+Appwrite: Backend-as-a-Service para autenticação de usuários, banco de dados NoSQL e armazenamento de imagens
+.
+Sentry: Monitoramento de erros e rastreamento de crashes em tempo real
+.
+Expo Router: Navegação baseada em arquivos, utilizando grupos de rotas para (auth) e (tabs)
+.
+✨ Funcionalidades (Em Desenvolvimento)
+[x] Estrutura de pastas escalável e navegação por abas (Tabs)
+.
+[x] Autenticação completa (E-mail e Senha) com Appwrite
+.
+[x] Design Responsivo com NativeWind
+.
+[x] Gerenciamento de estado global para o Carrinho com Zustand
+.
+[x] Busca de produtos com filtros por categoria
+.
+[ ] Integração de pagamentos reais.
+[ ] Perfil de usuário detalhado.
+🛠️ Como rodar o projeto
+Pré-requisitos
+Node.js instalado.
+Aplicativo Expo Go instalado no seu celular (Android ou iOS)
+.
+Passo a Passo
+Clone o repositório:
+git clone https://github.com/DevKhal-EL/Fast-Food-App.git
+Entre na pasta do projeto:
+cd fast-food-delivery
+Instale as dependências:
+npm install
+Inicie o Metro Bundler:
+npx expo start
+Abra o app no celular: Escaneie o QR Code que aparecerá no terminal usando a câmera do celular (iOS) ou o app Expo Go (Android)
+.
